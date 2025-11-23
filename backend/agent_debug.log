@@ -1,0 +1,1739 @@
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+DEV:livekit.agents:reloading job
+INFO:livekit.agents:initializing process
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/opentelemetry/util/_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/ipc/job_proc_lazy_main.py", line 275, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src/agent.py", line 99, in entrypoint
+    stt=deepgram.STT(model="nova-3"),
+        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/plugins/deepgram/stt.py", line 140, in __init__
+    raise ValueError("Deepgram API key is required")
+ValueError: Deepgram API key is required
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/opentelemetry/util/_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/ipc/job_proc_lazy_main.py", line 275, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src/agent.py", line 99, in entrypoint
+    stt=deepgram.STT(model="nova-3"),
+        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/plugins/deepgram/stt.py", line 140, in __init__
+    raise ValueError("Deepgram API key is required")
+ValueError: Deepgram API key is required
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using selector: KqueueSelector
+DEV:livekit.agents:Watching /Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+INFO:livekit.agents:registered worker
+WARNING:watchfiles.main:received signal 15, raising KeyboardInterrupt
+WARNING:livekit.agents:failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 972, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1053, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1025, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+WARNING:livekit.agents:failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 972, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1053, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1025, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+WARNING:livekit.agents:failed to connect to livekit, retrying in 2s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 2s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 4s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 4s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 6s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 6s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 8s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 8s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+DEBUG:asyncio:Using selector: KqueueSelector
+DEV:livekit.agents:Watching /Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:registered worker
+DEBUG:asyncio:Using selector: KqueueSelector
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/opentelemetry/util/_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/ipc/job_proc_lazy_main.py", line 275, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src/agent.py", line 99, in entrypoint
+    stt=deepgram.STT(model="nova-3"),
+        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/plugins/deepgram/stt.py", line 140, in __init__
+    raise ValueError("Deepgram API key is required")
+ValueError: Deepgram API key is required
+DEBUG:asyncio:Using selector: KqueueSelector
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/opentelemetry/util/_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/ipc/job_proc_lazy_main.py", line 275, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src/agent.py", line 99, in entrypoint
+    stt=deepgram.STT(model="nova-3"),
+        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/plugins/deepgram/stt.py", line 140, in __init__
+    raise ValueError("Deepgram API key is required")
+ValueError: Deepgram API key is required
+WARNING:watchfiles.main:received signal 15, raising KeyboardInterrupt
+WARNING:watchfiles.main:received signal 15, raising KeyboardInterrupt
+WARNING:livekit.agents:failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 972, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1053, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1025, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+WARNING:livekit.agents:failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 972, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1053, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1025, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+WARNING:livekit.agents:failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 972, in _connection_task
+    await self._run_ws(ws)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1053, in _run_ws
+    await asyncio.gather(*tasks)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 1025, in _recv_task
+    raise Exception("worker connection closed unexpectedly")
+Exception: worker connection closed unexpectedly
+WARNING:livekit.agents:failed to connect to livekit, retrying in 2s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 2s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 2s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 4s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 4s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 4s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 6s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 6s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+WARNING:livekit.agents:failed to connect to livekit, retrying in 6s
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 122, in start_connection
+    raise first_exception
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 641, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/asyncio/selector_events.py", line 681, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7880)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/worker.py", line 932, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1291, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 127.0.0.1:7880 ssl:default [Connect call failed ('127.0.0.1', 7880)]
+DEBUG:asyncio:Using selector: KqueueSelector
+DEV:livekit.agents:Watching /Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:starting worker
+INFO:livekit.agents:starting inference executor
+INFO:livekit.agents:initializing process
+DEBUG:livekit.agents:initializing inference runner
+DEBUG:livekit.agents:inference runner initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:registered worker
+INFO:livekit.agents:received job request
+DEBUG:livekit.agents:received assignment
+INFO:livekit.agents:initializing process
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+WARNING:livekit.agents:RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+WARNING:livekit.agents:RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit:livekit_api::signal_client::signal_stream:92:livekit_api::signal_client::signal_stream - connecting to ws://127.0.0.1:7880/rtc?sdk=python&protocol=16&auto_subscribe=1&adaptive_stream=0&version=1.0.19
+DEBUG:livekit:tungstenite::handshake::client:95:tungstenite::handshake::client - Client handshake done.
+ERROR:livekit:livekit_ffi::server::room:149:livekit_ffi::server::room - audio filter cannot be enabled: LiveKit Cloud is required
+ERROR:livekit:livekit_ffi::server::room:149:livekit_ffi::server::room - audio filter cannot be enabled: LiveKit Cloud is required
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+INFO:agent:Connected to room. Sending greeting...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+INFO:agent:Connected to room. Sending greeting...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+ERROR:livekit:livekit_ffi::server::audio_stream:123:livekit_ffi::server::audio_stream - failed to initialize the audio filter. it will not be enabled for this session.
+ERROR:livekit:livekit_ffi::server::audio_stream:123:livekit_ffi::server::audio_stream - failed to initialize the audio filter. it will not be enabled for this session.
+DEBUG:livekit.plugins.deepgram:Established new Deepgram STT WebSocket connection:
+DEBUG:livekit.plugins.deepgram:Established new Deepgram STT WebSocket connection:
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+WARNING:livekit.agents:_SegmentSynchronizerImpl.resume called after close
+WARNING:livekit.agents:_SegmentSynchronizerImpl.resume called after close
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:executing tool
+INFO:agent:Saving order: {'drinkType': 'Latte', 'size': 'Small', 'milk': 'Almond', 'extras': ['Vanilla Syrup'], 'name': 'Kishore Koduru'}
+DEBUG:livekit.agents:executing tool
+DEBUG:livekit.agents:tools execution completed
+INFO:agent:Saving order: {'drinkType': 'Latte', 'size': 'Small', 'milk': 'Almond', 'extras': ['Vanilla Syrup'], 'name': 'Kishore Koduru'}
+DEBUG:livekit.agents:tools execution completed
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:session closed
+DEBUG:livekit:tungstenite::protocol:666:tungstenite::protocol - Received close frame: Some(CloseFrame { code: Normal, reason: "" })
+INFO:livekit:livekit::room:1400:livekit::room - disconnected from room with reason: RoomClosed
+DEBUG:livekit.agents:shutting down job task
+INFO:livekit.agents:process exiting
+DEBUG:livekit.agents:shutting down job task
+INFO:agent:Usage: UsageSummary(llm_prompt_tokens=3457, llm_prompt_cached_tokens=0, llm_input_audio_tokens=0, llm_input_cached_audio_tokens=0, llm_input_text_tokens=0, llm_input_cached_text_tokens=0, llm_input_image_tokens=0, llm_input_cached_image_tokens=0, llm_completion_tokens=235, llm_output_audio_tokens=0, llm_output_image_tokens=0, llm_output_text_tokens=0, tts_characters_count=674, tts_audio_duration=43.039999999999985, stt_audio_duration=95.3499999999998)
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+INFO:agent:Usage: UsageSummary(llm_prompt_tokens=3457, llm_prompt_cached_tokens=0, llm_input_audio_tokens=0, llm_input_cached_audio_tokens=0, llm_input_text_tokens=0, llm_input_cached_text_tokens=0, llm_input_image_tokens=0, llm_input_cached_image_tokens=0, llm_completion_tokens=235, llm_output_audio_tokens=0, llm_output_image_tokens=0, llm_output_text_tokens=0, tts_characters_count=674, tts_audio_duration=43.039999999999985, stt_audio_duration=95.3499999999998)
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+INFO:livekit.agents:received job request
+DEBUG:livekit.agents:received assignment
+INFO:livekit.agents:initializing process
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+WARNING:livekit.agents:RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+WARNING:livekit.agents:RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:input stream attached
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+DEBUG:livekit.agents:http_session(): creating a new httpclient ctx
+INFO:livekit:livekit_api::signal_client::signal_stream:92:livekit_api::signal_client::signal_stream - connecting to ws://127.0.0.1:7880/rtc?sdk=python&protocol=16&auto_subscribe=1&adaptive_stream=0&version=1.0.19
+DEBUG:livekit:tungstenite::handshake::client:95:tungstenite::handshake::client - Client handshake done.
+ERROR:livekit:livekit_ffi::server::room:149:livekit_ffi::server::room - audio filter cannot be enabled: LiveKit Cloud is required
+ERROR:livekit:livekit_ffi::server::room:149:livekit_ffi::server::room - audio filter cannot be enabled: LiveKit Cloud is required
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+INFO:agent:Connected to room. Sending greeting...
+DEBUG:livekit.agents:using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+DEBUG:livekit.agents:using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+INFO:agent:Connected to room. Sending greeting...
+DEBUG:livekit.agents:start reading stream
+DEBUG:livekit.agents:start reading stream
+ERROR:livekit:livekit_ffi::server::audio_stream:123:livekit_ffi::server::audio_stream - failed to initialize the audio filter. it will not be enabled for this session.
+ERROR:livekit:livekit_ffi::server::audio_stream:123:livekit_ffi::server::audio_stream - failed to initialize the audio filter. it will not be enabled for this session.
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.plugins.deepgram:Established new Deepgram STT WebSocket connection:
+DEBUG:livekit.plugins.deepgram:Established new Deepgram STT WebSocket connection:
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:resumed false interrupted speech
+DEBUG:livekit.agents:resumed false interrupted speech
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:executing tool
+INFO:agent:Saving order: {'drinkType': 'Latte', 'size': 'Small', 'milk': 'Almond', 'extras': ['Vanilla Syrup'], 'name': 'Kishore'}
+DEBUG:livekit.agents:executing tool
+DEBUG:livekit.agents:tools execution completed
+INFO:agent:Saving order: {'drinkType': 'Latte', 'size': 'Small', 'milk': 'Almond', 'extras': ['Vanilla Syrup'], 'name': 'Kishore'}
+DEBUG:livekit.agents:tools execution completed
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:LLM metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.agents:received user transcript
+DEBUG:livekit.plugins.turn_detector:eou prediction
+DEBUG:livekit.agents:using preemptive generation
+DEBUG:livekit.plugins.turn_detector:eou prediction
+INFO:livekit.agents:EOU metrics
+DEBUG:livekit.agents:using preemptive generation
+INFO:livekit.agents:EOU metrics
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+INFO:livekit.agents:LLM metrics
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:sent text to tts
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+DEBUG:livekit.agents:flush audio emitter due to slow audio generation
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:TTS metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:STT metrics
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+INFO:livekit.agents:closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:stream closed
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:input stream detached
+DEBUG:livekit.agents:session closed
+DEBUG:livekit.agents:session closed
+DEBUG:livekit:tungstenite::protocol:666:tungstenite::protocol - Received close frame: Some(CloseFrame { code: Normal, reason: "" })
+INFO:livekit:livekit::room:1400:livekit::room - disconnected from room with reason: RoomClosed
+DEBUG:livekit.agents:shutting down job task
+INFO:livekit.agents:process exiting
+DEBUG:livekit.agents:shutting down job task
+INFO:agent:Usage: UsageSummary(llm_prompt_tokens=4245, llm_prompt_cached_tokens=0, llm_input_audio_tokens=0, llm_input_cached_audio_tokens=0, llm_input_text_tokens=0, llm_input_cached_text_tokens=0, llm_input_image_tokens=0, llm_input_cached_image_tokens=0, llm_completion_tokens=259, llm_output_audio_tokens=0, llm_output_image_tokens=0, llm_output_text_tokens=0, tts_characters_count=629, tts_audio_duration=39.60000000000002, stt_audio_duration=80.24999999999983)
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+INFO:agent:Usage: UsageSummary(llm_prompt_tokens=4245, llm_prompt_cached_tokens=0, llm_input_audio_tokens=0, llm_input_cached_audio_tokens=0, llm_input_text_tokens=0, llm_input_cached_text_tokens=0, llm_input_image_tokens=0, llm_input_cached_image_tokens=0, llm_completion_tokens=259, llm_output_audio_tokens=0, llm_output_image_tokens=0, llm_output_text_tokens=0, tts_characters_count=629, tts_audio_duration=39.60000000000002, stt_audio_duration=80.24999999999983)
+DEBUG:livekit.agents:http_session(): closing the httpclient ctx
+INFO:livekit.agents:received job request
+DEBUG:livekit.agents:received assignment
+INFO:livekit.agents:initializing process
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:livekit.agents:process initialized
+DEBUG:asyncio:Using selector: KqueueSelector
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/opentelemetry/util/_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/ipc/job_proc_lazy_main.py", line 275, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src/agent.py", line 99, in entrypoint
+    stt=deepgram.STT(model="nova-3"),
+        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/plugins/deepgram/stt.py", line 140, in __init__
+    raise ValueError("Deepgram API key is required")
+ValueError: Deepgram API key is required
+ERROR:livekit.agents:unhandled exception while running the job task
+Traceback (most recent call last):
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/opentelemetry/util/_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/agents/ipc/job_proc_lazy_main.py", line 275, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/src/agent.py", line 99, in entrypoint
+    stt=deepgram.STT(model="nova-3"),
+        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/kodurukishore/Downloads/ten-days-of-voice-agents-2025-main 2/backend/.venv/lib/python3.13/site-packages/livekit/plugins/deepgram/stt.py", line 140, in __init__
+    raise ValueError("Deepgram API key is required")
+ValueError: Deepgram API key is required
